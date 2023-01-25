@@ -58,7 +58,7 @@ class StickyNavigation {
 			this.setSliderCss();
 		}
 	}
-    	
+
 	setSliderCss() {
 		let width = 0;
 		let left = 0;
