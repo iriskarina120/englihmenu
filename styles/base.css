@@ -20,8 +20,13 @@ body {
     padding: 0 2em;
   }
 
+  .et-hero-tabs{
+    background-color: #2a4c9c;
+  }
+  
+
   .et-hero-tabs img{
-    max-height: 400px;
+    max-height: 400px;   
   }
   .et-hero-tabs h1,
   .et-slide h1 {
@@ -50,6 +55,7 @@ body {
   .et-hero-tabs-container--top {
     position: fixed;
     top: 0;
+    
   }
   
   .et-hero-tab {
@@ -76,6 +82,9 @@ body {
     background: #66B1F1;
     transition: left 0.3s ease;
   }
+
+
+
   
   @media (min-width: 800px) {
     .et-hero-tabs h1,
