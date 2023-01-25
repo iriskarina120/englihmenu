@@ -20,11 +20,11 @@ body {
   }
 
   .et-hero-tabs img{
-    max-height: 765px;
+    max-height: 500px;
   }
   .et-hero-tabs h1,
   .et-slide h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0;
     letter-spacing: 1rem;
   }
@@ -71,7 +71,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 0;
-    height: 4px;
+    height: 6px;
     background: #66B1F1;
     transition: left 0.3s ease;
   }
