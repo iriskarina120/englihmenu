@@ -1,74 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | English Munu</title>
-        <meta name="description" content="English Menu.A website 
-        that offers English classes to suit the client through an online agenda">
-        <link rel="shortcut icon" href="./assets/Logo.png">
-        <link rel="stylesheet" href="./styles/normalize.css">       
-        <link rel="stylesheet" href="./styles/base.css">
-        <link rel="stylesheet" href="./styles/medium.css"
-                media="(max-width: 1040px)">
-        <link rel="stylesheet" href="./styles/small.css"
-                media="(max-width: 850px)">
-        <link rel="stylesheet" href="./styles/tiny.css"
-                media="(max-width: 377px)">
-    </head>
-    <body>
-  
-  <!-- Hero -->
-  <section class="et-hero-tabs">
-    <div id="hero-img">
-        <img src="./assets/Logo.png">
-        <img src="./assets/pexels-ekaterina-bolovtsova-4049992.jpg">
-    </div>
-    <div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-es6">Nosotros</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Profesores</a>
-      <a class="et-hero-tab" href="#tab-react">Clases y Tutorías</a>
-      <a class="et-hero-tab" href="#tab-angular">Agenda</a>
-      <a class="et-hero-tab" href="#tab-other">Precios</a>
-      <span class="et-hero-tab-slider"></span>
-    </div>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | English Menu</title>
+    <meta
+      name="description"
+      content="English Menu.A website 
+        that offers English classes to suit the client through an online agenda"
+    />
+    <link rel="shortcut icon" href="./assets/Logo.png" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/medium.css"
+      media="(max-width: 1040px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/small.css"
+      media="(max-width: 850px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/tiny.css"
+      media="(max-width: 377px)"
+    />
+  </head>
+  <body>
+    <!-- Hero -->
+    <div class="first-info">
+      <div>
+          <ul class="socials">
+          <li class="socials__item">
+            <a href="#"class='socials__link fb'></a>
+        </li>
+        
+        </li>
+         <li class="socials__item">
+           <a href="#" class='socials__link in'></a>
+        </li>
+        
+        </li>
+         <li class="socials__item">
+           <a href="#" class='socials__link g'></a>
+        </li> 
+        <li class="socials__item">
+           <a href="#" class='socials__link sm'></a>
+        </li>
+        </ul>    
+      </div>        
+        <h1>
+         Bienvenido a English Menu
+        </h1>
+        <a id="whatsapp" href="https://wa.me/+56945478152?text=Hola, quiero más información sobre las clases?" target="_blank">Consultas<img src= "https://cdn.glitch.global/314bc9df-6982-42f2-b3bf-76ab0aa9d1fa/whatsapp.png?v=1674667765218" alt= "Whatsapp image" width= "50"></a>
 
-  <!-- Main -->
-  <main class="et-main">
-    <section class="et-slide" id="tab-es6">
-      <h1>Nosotros</h1>
-      <h3>something about es6</h3>
+        <!-- 628998080016 = your number -->
+
+        <!--Source : <a target="_blank" href ="https://faq.whatsapp.com/en/general/26000030">https://faq.whatsapp.com/en/general/26000030</a>-->
+    </div> 
+<div class="contenedor">
+			<div class="imagen actual">
+				<img id"my-logo" src="./assets/Logo.png" />
+         <div class="texto" id ><a id= "main-btn" href="https://englishmenu.setmore.com" target="blank"/>Agendar Clase</a></div>
+				<div class="texto">Planes de estudio personalizados</div>
+			</div>
+			
+			<div class="imagen">
+				<img src="./assets/pexels-ekaterina-bolovtsova-4049992.jpg"/>
+        <div class="texto" id ><a id= "main-btn" href="https://englishmenu.setmore.com" target="blank"/>Agendar Clase</a></div>
+				<div class="texto">Aprendes desde cualquier lugar</div>
+			</div>
+			
+			<div class="imagen">
+				<img src="http://www.reciclay.com.ve/gio/yellowstone.jpg" />
+        <div class="texto" id ><a id= "main-btn" href="https://englishmenu.setmore.com" target="blank"/>Agendar Clase</a></div>
+				<div class="texto">Profesores comprometidos con tu aprendizaje</div>
+			</div>
+			
+			<div class="imagen">
+				<img src="http://www.reciclay.com.ve/gio/yosemite.jpg" />
+        <div class="texto" id ><a id= "main-btn" href="https://englishmenu.setmore.com" target="blank"/>Agendar Clase</a></div>
+				<div class="texto">Sin montos fijos de pago</div>
+        
+			</div>
+			
+			<a href="#" class="anterior" onclick="anterior();">&#10094;</a>
+			<a href="#" class="siguiente" onclick="siguiente();">&#10095;</a>
+			
+			<div class="puntos">
+				<span class="punto activo" onclick="mostrar(0);"></span>
+				<span class="punto" onclick="mostrar(1);"></span>
+				<span class="punto" onclick="mostrar(2);"></span>
+				<span class="punto" onclick="mostrar(3);"></span>
+			</div>
+			
+			<div class="boton">
+				<a href="#">
+					<img src="http://www.reciclay.com.ve/gio/pause.png" id="btn" onclick="playpause();" />
+				</a>
+			</div>
+		</div>
+      
+    <section class="et-hero-tabs">        
+      <div class="et-hero-tabs-container">
+        <div>
+          
+        </div>
+        <a class="et-hero-tab" href="#tab-es6">Nosotros</a>
+        <a class="et-hero-tab" href="#tab-flexbox">Profesores</a>
+        <a class="et-hero-tab" href="#tab-react">Clases</a>
+        <a class="et-hero-tab" href="#tab-angular">Agenda</a>
+        <a class="et-hero-tab" href="#tab-other">Precios</a>
+        <span class="et-hero-tab-slider"></span>
+      </div>
+      </div>
     </section>
-    <section class="et-slide" id="tab-flexbox">
-      <h1>Profesores</h1>
-      <h3>something about flexbox</h3>
-    </section>
-    <section class="et-slide" id="tab-react">
-      <h1>Clases y Tutorías</h1>
-      <h3>something about react</h3>
-    </section>
-    <section class="et-slide" id="tab-angular">
-      <h1>Agenda</h1>
-      <h3>something about angular</h3>
-    </section>
-    <section class="et-slide" id="tab-other">
-      <h1>Precios</h1>
-      <h3>something about other</h3>
-    </section>
-  </main>
-    <footer>
-        &copy;<span class="year">2022</span> Iris Ayala | WDD230
-        <p class="footer_update">Last Update:
-            <span id="modified"> </span>
+
+    <!-- Main -->
+    <main class="et-main">
+      <section class="et-slide" id="nosotros">
+        <div>
+        <h1>Nosotros</h1>
+        <h3>Profesionales comprometido con su labor</h3> 
+        <hr>
+        <p >
+         Somos un equipo de profesionales de diversas areas, que ponemos a su disposición una
+          variada carta de lecciones para que usted aprenda Inglés de forma sencilla y práctica, además de 
+          brindarle material de soporte y acesoría para que usted pueda seguir profundizando en aquello que 
+          aprenda en cada lección. El propósito principal de English menú es yudarlo a alcanzar el dominio 
+          del idioma Inglés de forma natural y fluida, teniendo en cuenta sus preferencias de temática, horarios, 
+          ritmo y métodos.<br>
+        <br>
+        <img id= "img2" src="./assets/pexels-ekaterina-bolovtsova-4049992.jpg" width="500"/><div> 
+        <button class="btn"><a  href="https://englishmenu.setmore.com/aboutus" target="blank"/>Ver más</a></button> 
         </p>
-        <a href="#">Terms of Use</a>
+        </div>
+      </section>
+      <section class="et-slide" id="tab-flexbox">
+        <div>
+        <h1>Profesores</h1>
+        <h3>Personal 100% calificado</h3>
+        <hr>
+        <p >
+          Contamos con un variado menú de lecciones para que elijas de acuerdo a tus preferencias, necesidades nivel y presupuesto.
+          Solo basta con visitar nuestro munú y agendar el día y la hora que deseas, eligiendo entre las diferentes lecciones que ofrece
+          cada profesor. <br>
+        <br>
+          <button class="btn"><a  href="https://englishmenu.setmore.com/staff" target="blank"/>Ver más</a></button>        
+        </p>
+        </div>
+      </section>
+      <section class="et-slide" id="tab-react">
+        <div>
+          <h1>Clases y Tutorías</h1>        
+        <h3>A tu elección</h3><br>
+         <hr>
+        <p >
+          Contamos con un variado menú de lecciones para que elijas de acuerdo a tus preferencias, necesidades nivel y presupuesto.
+          Solo basta con visitar nuestro munú y agendar el día y la hora que deseas, eligiendo entre las diferentes lecciones que ofrece
+          cada profesor. <br>
+        <br>
+        <button class="btn"><a  href="https://englishmenu.setmore.com/bookappointment" target="blank"/>Ver más</a></button> 
+        </p>
+        </div>
+        
+      </section>
+      <section class="et-slide" id="tab-angular">
+        <div>
+        <h1>Agenda</h1>
+        <h3>Reservas online para mayor comodidad</h3>
+         <hr>
+        <p >
+          Contamos con un variado menú de lecciones para que elijas de acuerdo a tus preferencias, necesidades nivel y presupuesto.
+          Solo basta con visitar nuestro munú y agendar el día y la hora que deseas, eligiendo entre las diferentes lecciones que ofrece
+          cada profesor. <br>
+        <br>
+        <button class="btn" href="https://englishmenu.setmore.com/" target="blank">Ver más</button>
+        </p>
+        </div>
+      </section>
+      <section class="et-slide" id="tab-other">
+        <div>
+        <h1>Precios</h1>
+        <h3>Se ajustan a tu presupuesto</h3>
+         <hr>
+        <p >
+          Contamos con un variado menú de lecciones para que elijas de acuerdo a tus preferencias, necesidades nivel y presupuesto.
+          Solo basta con visitar nuestro munú y agendar el día y la hora que deseas, eligiendo entre las diferentes lecciones que ofrece
+          cada profesor. <br>
+        <br>
+        <button class="btn" href="https://englishmenu.setmore.com/" target="blank">Ver más</button>
+        </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy;<span class="year">2022</span> Iris Ayala | WDD230
+      <p class="footer_update">
+        Last Update:
+        <span id="modified"> </span>
+      </p>
+      <a href="#">Terms of Use</a>
     </footer>
-    <div id="too-small">
-        <h3>Your screen size is too small to view this page</h3>
-    </div>
-    <script src="./js/hero-slaider.js"></script> 
+   
+    <script src="./js/hero-slaider.js"></script>
     <script src="./js/slider-nav.js"></script>
-    <script src="./js/upsate.js"></script>    
-    </body>
+    <script src="./js/upsate.js"></script>
+  </body>
 </html>
