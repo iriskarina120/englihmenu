@@ -1,7 +1,6 @@
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
-  max-width: 100%;
-  backgrund:black;
+  max-width: 100%; 
 }
 
 a {
@@ -12,9 +11,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items:center;
-  
-  padding:2px;
+  align-items:flex-start;
+  background: #eeeeee;
+  margin: 0px;
   border-radius:5px;
 }
 
@@ -63,13 +62,9 @@ a {
 }
 .et-slide {
   margin-top: 0px;
-  padding-top: 25px;
-  
+  padding-top: 25px;  
   line-height: 1.5em;
   border-radius:5px;
-}
-header{
-  background:black;
 }
 
 .et-hero-tabs-container {
@@ -115,7 +110,6 @@ header{
   
   transition: all 0.5s ease; 
 }
-
 
 .socials {
   margin-top: 5px;
@@ -307,6 +301,7 @@ footer {
 .contenedor #my-logo img{
   background-color:#2a4c9c;  
  padding-top: 0px;
+  max-height: 90%;
 }	
 .contenedor #my-logo{
   background-color:#2a4c9c;
@@ -317,7 +312,7 @@ footer {
 			position: relative;
 			left: 50%;
 			transform: translateX(-50%);
-      border-radius: 5px;
+      border-radius: 10px;
 		}
 
 		.texto {
@@ -339,9 +334,7 @@ footer {
 			transform: translateY(-50%);
       -webkit-text-stroke: 0.3px black;
 		}
-.contenedor #my-logo img {
-  max-height: 90%;
-}
+
 		.siguiente {
 			left: 97%;
 		}
@@ -382,6 +375,122 @@ footer {
 		.activo {
 			background-color: gray;
 		}
+
+/*-------Pofesores---------*/  
+.col{
+  background-image: url(https://picsum.photos/g/3000/2000);
+  background-size: cover;
+  background-position: center; 
+  padding: 10px;  
+}
+
+.our-team {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  text-align:left;
+  line-height: 1em;
+}
+.our-team h3{
+  text-align:center; 
+  
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color:#f7f5ec;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
 
 @media (min-width: 500px) {
   
@@ -454,8 +563,7 @@ footer {
   }  
 
 .imagen img {
-    width: 70%;    
-    
+    width: 70%;     
   }
   .texto{
     font-size: 1.5em;
@@ -464,8 +572,7 @@ footer {
 .texto #name{  
   position: absolute;
   left:-180px; 
-  top: -170px;
- 
+  top: -170px; 
 }
 .texto #name img{  
   max-width: 60%; 
@@ -482,13 +589,24 @@ footer {
 .contenedor #my-logo{
   max-width: 90%;
   margin-left:65px;
+  border-radius: 10px;
   }
 .et-slide {  
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 100px;
+  padding-right: 100px;
   line-height: 2em;
   font-size: 1.3em;
   } 
+.col {    
+  display: flex;  
+}
+ 
+.our-team {  
+  position: relative;  
+  width: 25%;
+}
+
+ 
  
   
   
